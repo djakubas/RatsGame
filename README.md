@@ -1,5 +1,5 @@
-# RatsGame
+# Rats Memory Game
 
-### [Rats Memory Game](https://djakubas.github.io/RatsGame/)
+### [Click to play Rats Memory Game!](https://djakubas.github.io/RatsGame/)
 
 Do not leave any rat alone! 
