@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szczurki</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <script src="game.js"></script>
+    <div id="top-bar">
+        <div>
+            <h1>Pomóż Szczurkom znaleźć parę!</h1>
+        </div>
+        <div>
+            <h2 id="pairscount">Znalezione pary: 0/5</h2>
+            <h2 id="scorecount">Twoj wynik: 0</h2>
+            <button id="top-button" onclick=window.location.reload()>Jeszcze raz!</button>
+        </div>
+        
+    </div>
+    <br><br>
+
+    <button class="start-button" id="StartButton" onclick=StartClick()>Start!</button>
+    
+
+    <div class="victory-container">
+        <h2>Gratulacje!</h2>
+        <p>Wszystkie szczurki mają swoje pary!</p>
+        <p id ="finalscore">Twój wynik: </p>
+    </div>
+      
+
+
+    <div id="picture-container">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+#top-bar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #top-bar div {
+    display: flex;
+    padding: 8px 16px;
+  }
+  #top-bar div h2{
+    padding: 8px 16px;
+  }
+  
+  
+  #top-button {
+    background-color: #FFC107; /* Set background color to yellow */
+    color: #333; /* Set text color to dark grey */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  #top-button:hover {
+    background-color: #FFD54F; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow on hover */
+  }
+
+#picture-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px; /* Adjust as needed */
+    padding-bottom: 20px; /* Adjust as needed */
+    overflow: auto; /* Enable scrolling within container */
+    height: calc(100% - 70px); /* Subtract top bar height */
+}
+
+.picture {
+    flex: 1 1 20%; /* Flex basis set to 20% */
+    max-width: 200px; /* Maximum width of each picture */
+    margin: 10px; /* Adjust as needed */
+    overflow: hidden; /* Prevent pictures from overflowing container */
+}
+
+.picture img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+.start-button {
+    background-color: #FFC107; /* Set background color to yellow */
+    color: #333; /* Set text color to dark grey */
+    border: none; /* Remove border */
+    padding: 15px 30px; /* Add padding */
+    font-size: 18px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    border-radius: 20px; /* Add border radius */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: all 0.3s ease; /* Add transition for smooth hover effect */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.start-button:hover {
+    background-color: #FFD54F; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+    transform: translate(-50%, -50%) scale(1.1); /* Scale the button on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow on hover */
+}
+
+
+  
+@-webkit-keyframes shake {
+  0% { -webkit-transform: translate(2px, 1px) rotate(0deg); } 
+  10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+  30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+  40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+  50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+  70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+  80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+  90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+  100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+.pictureshake {
+  -webkit-animation-name: shake;
+  -webkit-animation-duration: 0.5s;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: infinite;
+
+}
+
+
+
+.victory-container {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.victory-container h2 {
+  color: #4caf50;
+}
+
+.victory-container p {
+  color: #333;
+}
+
+#score {
+  font-weight: bold;
+  color: #ff5722;
+}
